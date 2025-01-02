@@ -1,0 +1,1457 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Welcome to IB Connect, your hub for International Baccalaureate tutoring, resources, support, and community. Excel in your IB journey with our expert guidance."/>
+  <meta name="keywords" content="IB, International Baccalaureate, IB Tutoring, IB Resources, IB Support, Academic Excellence"/>
+  <meta name="author" content="IB Connect Team"/>
+  <!-- Favicon -->
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <!-- SEO Meta Tags -->
+  <meta property="og:title" content="Home - IB Connect">
+  <meta property="og:description" content="Welcome to IB Connect, your hub for International Baccalaureate tutoring, resources, support, and community. Excel in your IB journey with our expert guidance.">
+  <meta property="og:image" content="https://via.placeholder.com/1200x630.png?text=IB+Connect+Logo">
+  <meta property="og:url" content="https://www.ibconnect.com">
+  <meta name="twitter:card" content="summary_large_image">
+  <!-- Structured Data for SEO -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "IB Connect",
+    "url": "https://www.ibconnect.com",
+    "logo": "https://via.placeholder.com/1200x630.png?text=IB+Connect+Logo",
+    "sameAs": [
+      "https://www.facebook.com/ibconnect",
+      "https://www.twitter.com/ibconnect",
+      "https://www.linkedin.com/company/ibconnect",
+      "https://www.instagram.com/ibconnect"
+    ],
+    "description": "IB Connect is dedicated to providing comprehensive tutoring resources and support for International Baccalaureate students to achieve academic excellence."
+  }
+  </script>
+  <title>Home - IB Connect</title>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet"/>
+
+  <!-- AOS Library -->
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+
+  <style>
+    /* General Reset & Base Styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-smooth: antialiased;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    :root {
+      /* Mixed Theme Colors */
+      --color-bg-vintage: #fdf6e3; /* Vintage Cream */
+      --color-bg-modern: #ffffff; /* Modern White */
+      --color-bg-classic: #f0ebe1; /* Classic Beige */
+      --color-bg-retro: #e0f7fa; /* Retro Teal */
+      
+      --color-text-vintage: #4a3f35; /* Deep Brown */
+      --color-text-modern: #333333; /* Modern Dark Gray */
+      --color-text-classic: #2c2c2c; /* Classic Charcoal */
+      --color-text-retro: #006064; /* Retro Teal Dark */
+
+      --color-primary-vintage: #8c6d5b; /* Vintage Brown */
+      --color-primary-modern: #6200ea; /* Modern Purple */
+      --color-primary-classic: #003366; /* Classic Navy */
+      --color-primary-retro: #ff5722; /* Retro Orange */
+
+      --color-secondary-vintage: #d4c2aa; /* Vintage Beige */
+      --color-secondary-modern: #03dac6; /* Modern Teal */
+      --color-secondary-classic: #f5f0e1; /* Classic Light Beige */
+      --color-secondary-retro: #ffc107; /* Retro Amber */
+
+      --color-accent-vintage: #b58900; /* Vintage Mustard */
+      --color-accent-modern: #bb86fc; /* Modern Light Purple */
+      --color-accent-classic: #c0c0c0; /* Classic Silver */
+      --color-accent-retro: #ff9800; /* Retro Bright Orange */
+
+      --color-subtle-text-vintage: #a89f91;
+      --color-subtle-text-modern: #757575;
+      --color-subtle-text-classic: #6e6e6e;
+      --color-subtle-text-retro: #ffcc80;
+
+      /* Light Theme Colors */
+      --color-bg: var(--color-bg-modern);
+      --color-text: var(--color-text-modern);
+      --color-primary-start: var(--color-primary-modern);
+      --color-primary-end: var(--color-primary-retro);
+      --color-secondary: var(--color-secondary-modern);
+      --color-accent: var(--color-accent-modern);
+      --color-subtle-text: var(--color-subtle-text-modern);
+
+      --transition-speed: 0.3s;
+      --font-primary: 'Lora', serif;
+      --font-secondary: 'Montserrat', sans-serif;
+    }
+
+    [data-theme="light"] {
+      /* Mixed Theme Assignment */
+      --color-bg: var(--color-bg-modern);
+      --color-text: var(--color-text-modern);
+      --color-primary-start: var(--color-primary-modern);
+      --color-primary-end: var(--color-primary-retro);
+      --color-secondary: var(--color-secondary-modern);
+      --color-accent: var(--color-accent-modern);
+      --color-subtle-text: var(--color-subtle-text-modern);
+    }
+
+    [data-theme="dark"] {
+      --color-bg: var(--color-bg-vintage);
+      --color-text: var(--color-text-vintage);
+      --color-primary-start: var(--color-primary-vintage);
+      --color-primary-end: var(--color-primary-classic);
+      --color-secondary: var(--color-secondary-vintage);
+      --color-accent: var(--color-accent-vintage);
+      --color-subtle-text: var(--color-subtle-text-vintage);
+    }
+
+    body {
+      font-family: var(--font-primary);
+      background-color: var(--color-bg);
+      color: var(--color-text);
+      transition: background-color var(--transition-speed), color var(--transition-speed);
+      line-height: 1.6;
+      position: relative;
+      overflow-x: hidden;
+    }
+
+    /* Skip Link */
+    .skip-link {
+      position: absolute;
+      top: -40px;
+      left: 0;
+      background: var(--color-primary-start);
+      color: var(--color-accent);
+      padding: 8px;
+      z-index: 999;
+      transition: top 0.3s;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .skip-link:focus {
+      top: 0;
+    }
+
+    /* Animations */
+    @keyframes fadeIn {
+      0% {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .fade-in {
+      opacity: 0;
+      animation: fadeIn 1s ease forwards;
+      visibility: hidden;
+    }
+
+    .fade-in.visible {
+      visibility: visible;
+    }
+
+    @keyframes slideInLeft {
+      from {
+        opacity: 0;
+        transform: translateX(-50px);
+      }
+      to {
+        opacity: 1;
+        transform: translateX(0);
+      }
+    }
+
+    @keyframes fadeInUp {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    /* Header with Refined Geometric Style */
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background-color: rgba(255, 255, 255, 0.95); /* Semi-transparent light background */
+      backdrop-filter: blur(10px);
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 30px;
+      transition: background-color var(--transition-speed), color var(--transition-speed), transform 0.3s;
+      position: relative;
+      flex-wrap: wrap;
+      font-family: var(--font-secondary);
+    }
+
+    .navbar-logo {
+      display: flex;
+      align-items: center;
+      color: var(--color-text);
+      font-size: 1.8rem;
+      font-family: var(--font-secondary);
+      font-weight: 700;
+      text-decoration: none;
+      position: relative;
+      z-index: 1001;
+    }
+
+    .navbar-logo svg {
+      width: 50px;
+      height: 50px;
+      margin-right: 10px;
+      flex-shrink: 0;
+    }
+
+    nav {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      flex-wrap: wrap;
+      position: relative;
+      z-index: 1001;
+    }
+
+    nav a {
+      color: var(--color-text);
+      text-decoration: none;
+      padding: 8px 12px;
+      font-weight: 500;
+      border-radius: 4px;
+      transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
+      font-family: var(--font-primary);
+      position: relative;
+      font-size: 1rem;
+    }
+
+    nav a.active::after {
+      content: '';
+      position: absolute;
+      bottom: -5px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 50%;
+      height: 2px;
+      background: var(--color-secondary);
+      border-radius: 2px;
+    }
+
+    nav a:hover,
+    nav a:focus {
+      background-color: var(--color-secondary);
+      color: var(--color-bg);
+      transform: translateY(-2px);
+    }
+
+    .menu-toggle {
+      display: none;
+      background: none;
+      border: none;
+      cursor: pointer;
+      padding: 5px;
+      flex-direction: column;
+      gap: 4px;
+      align-items: center;
+      justify-content: center;
+      transition: transform var(--transition-speed);
+      z-index: 1001;
+    }
+
+    .menu-toggle span {
+      display: block;
+      width: 25px;
+      height: 3px;
+      background: var(--color-text);
+      transition: all 0.3s ease;
+      border-radius: 3px;
+    }
+
+    /* When menu open (for cross icon) */
+    .menu-toggle.open span:nth-child(1) {
+      transform: translateY(8px) rotate(45deg);
+    }
+    .menu-toggle.open span:nth-child(2) {
+      opacity: 0;
+    }
+    .menu-toggle.open span:nth-child(3) {
+      transform: translateY(-8px) rotate(-45deg);
+    }
+
+    /* Floating Buttons */
+    .floating-buttons {
+      position: fixed;
+      right: 20px;
+      bottom: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      z-index: 1001;
+    }
+
+    /* Floating Theme Toggle Button */
+    .floating-theme-toggle {
+      background: var(--color-secondary);
+      color: var(--color-bg);
+      border: none;
+      border-radius: 50%;
+      width: 50px;
+      height: 50px;
+      cursor: pointer;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: background var(--transition-speed), transform var(--transition-speed);
+      font-family: var(--font-primary);
+      position: relative; /* Added to position child icons absolutely */
+    }
+
+    .floating-theme-toggle:hover,
+    .floating-theme-toggle:focus {
+      background: var(--color-primary-start);
+      transform: scale(1.1);
+      outline: none;
+    }
+
+    .floating-theme-toggle .theme-icon {
+      width: 24px;
+      height: 24px;
+      transition: opacity var(--transition-speed), fill var(--transition-speed);
+      position: absolute; /* Ensure icons are positioned absolutely within the button */
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%); /* Center the icons */
+      fill: var(--color-secondary);
+    }
+
+    .floating-theme-toggle .sun {
+      opacity: 1;
+    }
+
+    .floating-theme-toggle .moon {
+      opacity: 0;
+    }
+
+    [data-theme="light"] .floating-theme-toggle .sun {
+      opacity: 1;
+    }
+
+    [data-theme="light"] .floating-theme-toggle .moon {
+      opacity: 0;
+    }
+
+    [data-theme="dark"] .floating-theme-toggle .sun {
+      opacity: 0;
+    }
+
+    [data-theme="dark"] .floating-theme-toggle .moon {
+      opacity: 1;
+    }
+
+    /* Back to Top Button */
+    .back-to-top {
+      background: var(--color-secondary);
+      color: var(--color-bg);
+      border: none;
+      border-radius: 50%;
+      width: 50px;
+      height: 50px;
+      cursor: pointer;
+      opacity: 0;
+      pointer-events: none; /* Prevent interaction when hidden */
+      transition: opacity 0.3s ease, background 0.3s ease, transform 0.3s ease;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+      z-index: 1000;
+      font-family: var(--font-primary);
+    }
+
+    .back-to-top.visible {
+      opacity: 1;
+      pointer-events: auto; /* Allow interaction when visible */
+    }
+
+    .back-to-top:hover,
+    .back-to-top:focus {
+      background: var(--color-primary-start);
+      transform: scale(1.1);
+      outline: none;
+    }
+
+    /* Primary Hero Section with Refined Geometric Patterns */
+    .hero {
+      background: linear-gradient(135deg, var(--color-primary-end) 0%, var(--color-primary-start) 100%);
+      color: var(--color-bg);
+      text-align: center;
+      padding: 120px 20px;
+      position: relative;
+      overflow: hidden;
+      transition: background var(--transition-speed);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      z-index: 1;
+    }
+
+    /* Refined Geometric Patterns Overlay using SVG */
+    .hero::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 200 200"><defs><pattern id="pattern" x="0" y="0" width="40" height="40" patternUnits="userSpaceOnUse"><circle cx="20" cy="20" r="1.5" fill="%23ffffff" /></pattern></defs><rect width="200" height="200" fill="url(%23pattern)" opacity="0.05"/></svg>') repeat;
+      z-index: 0;
+      animation: subtleMove 20s linear infinite;
+    }
+
+    @keyframes subtleMove {
+      from {
+        transform: translate(0, 0);
+      }
+      to {
+        transform: translate(-40px, -40px);
+      }
+    }
+
+    .hero h1 {
+      font-size: 3.5rem;
+      margin-bottom: 20px;
+      font-family: var(--font-secondary);
+      font-weight: 700;
+      letter-spacing: 1.2px;
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      animation: slideInLeft 1s ease forwards;
+      position: relative;
+      z-index: 1;
+      opacity: 0;
+      transform: translateX(-50px);
+      transition: opacity 1s ease, transform 1s ease;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      max-width: 800px;
+      margin: auto;
+      line-height: 1.6;
+      font-weight: 400;
+      font-family: var(--font-primary);
+      animation: fadeIn 1.5s ease forwards;
+      position: relative;
+      z-index: 1;
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity 1.5s ease, transform 1.5s ease;
+    }
+
+    .hero button {
+      margin-top: 30px;
+      padding: 12px 30px;
+      background: var(--color-secondary);
+      color: var(--color-bg);
+      font-size: 1rem;
+      font-weight: 600;
+      border: none;
+      border-radius: 50px;
+      cursor: pointer;
+      transition: background 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-family: var(--font-primary);
+      animation: fadeIn 2s ease forwards;
+      position: relative;
+      z-index: 1;
+      opacity: 0;
+      transform: translateY(20px);
+    }
+
+    .hero button:hover,
+    .hero button:focus {
+      background: var(--color-primary-start);
+      transform: scale(1.05);
+      box-shadow: 0 8px 15px rgba(0,0,0,0.2);
+      outline: none;
+    }
+
+    /* Footer */
+    footer {
+      background: var(--color-primary-start);
+      color: #f5f0e1;
+      padding: 60px 20px;
+      transition: background-color var(--transition-speed), color var(--transition-speed);
+      font-family: var(--font-primary);
+      position: relative;
+      z-index: 1;
+    }
+
+    .footer-content {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 40px;
+    }
+
+    .footer-col h3 {
+      font-family: var(--font-secondary);
+      font-size: 1.3rem;
+      margin-bottom: 15px;
+      font-weight: 700;
+      color: var(--color-secondary);
+      position: relative;
+    }
+
+    .footer-col h3::after {
+      content: '';
+      width: 40px;
+      height: 3px;
+      background: var(--color-secondary);
+      display: block;
+      margin: 5px auto 0;
+      border-radius: 2px;
+    }
+
+    .footer-col p, .footer-col a {
+      font-size: 0.95rem;
+      line-height: 1.6;
+      color: #f5f0e1;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+
+    .footer-col a:hover,
+    .footer-col a:focus {
+      color: var(--color-secondary);
+      transform: translateX(2px);
+    }
+
+    .footer-col a {
+      display: block;
+      margin-bottom: 8px;
+    }
+
+    /* Footer Bottom */
+    .footer-bottom {
+      margin-top: 30px;
+      border-top: 1px solid rgba(245, 240, 225, 0.2);
+      padding-top: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+      text-align: center;
+    }
+
+    .social-media {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .social-media a {
+      color: #f5f0e1;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      background-color: var(--color-secondary);
+      transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
+      font-family: var(--font-primary);
+    }
+
+    .social-media a:hover,
+    .social-media a:focus {
+      background-color: var(--color-primary-start);
+      color: #f5f0e1;
+      transform: scale(1.1);
+      outline: none;
+    }
+
+    .social-media svg {
+      width: 24px;
+      height: 24px;
+      fill: currentColor;
+    }
+
+    .footer-bottom p {
+      font-size: 0.9rem;
+      color: #f5f0e1;
+    }
+
+    /* Back to Top Button */
+    .back-to-top {
+      background: var(--color-secondary);
+      color: var(--color-bg);
+      border: none;
+      border-radius: 50%;
+      width: 50px;
+      height: 50px;
+      cursor: pointer;
+      opacity: 0;
+      pointer-events: none; /* Prevent interaction when hidden */
+      transition: opacity 0.3s ease, background 0.3s ease, transform 0.3s ease;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+      z-index: 1000;
+      font-family: var(--font-primary);
+    }
+
+    .back-to-top.visible {
+      opacity: 1;
+      pointer-events: auto; /* Allow interaction when visible */
+    }
+
+    .back-to-top:hover,
+    .back-to-top:focus {
+      background: var(--color-primary-start);
+      transform: scale(1.1);
+      outline: none;
+    }
+
+    /* Floating Buttons Container */
+    .floating-buttons {
+      position: fixed;
+      right: 20px;
+      bottom: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      z-index: 1001;
+    }
+
+    /* Modal Styles */
+    .modal-overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0,0,0,0.5);
+      display: none;
+      align-items: center;
+      justify-content: center;
+      z-index: 9999;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+
+    .modal-overlay.active {
+      display: flex;
+      opacity: 1;
+    }
+
+    .modal {
+      background: var(--color-bg);
+      padding: 30px;
+      border-radius: 10px;
+      max-width: 500px;
+      width: 90%;
+      position: relative;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+      text-align: left;
+      transition: background var(--transition-speed), color var(--transition-speed), transform 0.3s ease;
+      font-family: var(--font-primary);
+      transform: translateY(-50px);
+      opacity: 0;
+      animation: modalIn 0.5s forwards;
+    }
+
+    @keyframes modalIn {
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+
+    [data-theme="light"] .modal {
+      background: var(--color-bg-modern);
+    }
+
+    .modal h3 {
+      font-size: 1.8rem;
+      margin-bottom: 20px;
+      color: var(--color-primary-start);
+      font-family: var(--font-secondary);
+      font-weight: 700;
+    }
+
+    .modal form label {
+      display: block;
+      font-weight: 600;
+      margin-bottom: 8px;
+      color: var(--color-text);
+    }
+
+    .modal form input,
+    .modal form textarea {
+      width: 100%;
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      margin-bottom: 15px;
+      background: var(--color-bg);
+      color: var(--color-text);
+      transition: border 0.3s ease, background 0.3s ease, color 0.3s ease;
+      font-family: var(--font-primary);
+      font-size: 1rem;
+    }
+
+    .modal form input::placeholder,
+    .modal form textarea::placeholder {
+      color: #c1b09e;
+    }
+
+    .modal form input:focus,
+    .modal form textarea:focus {
+      outline: none;
+      border-color: var(--color-secondary);
+      box-shadow: 0 0 5px var(--color-secondary);
+    }
+
+    .modal form textarea {
+      resize: vertical;
+      min-height: 150px;
+    }
+
+    .modal .error-message {
+      color: red;
+      font-size: 0.9rem;
+      margin-bottom: 10px;
+      display: none;
+      font-family: var(--font-primary);
+    }
+
+    .modal .thank-you {
+      display: none;
+      text-align: center;
+    }
+
+    .modal .thank-you p {
+      font-size: 1.2rem;
+      margin-bottom: 20px;
+      color: var(--color-text);
+    }
+
+    .modal button {
+      cursor: pointer;
+      background: var(--color-secondary);
+      color: var(--color-bg);
+      border: none;
+      padding: 12px 20px;
+      border-radius: 5px;
+      font-weight: 600;
+      font-size: 1rem;
+      transition: background 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+      font-family: var(--font-primary);
+    }
+
+    .modal button:hover,
+    .modal button:focus {
+      background: var(--color-primary-start);
+      transform: scale(1.05);
+      box-shadow: 0 8px 15px rgba(0,0,0,0.2);
+      outline: none;
+    }
+
+    .modal-close {
+      position: absolute;
+      top: 15px;
+      right: 15px;
+      background: none;
+      border: none;
+      cursor: pointer;
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: var(--color-primary-start);
+      font-family: var(--font-primary);
+      transition: color 0.3s ease;
+    }
+
+    .modal-close:hover,
+    .modal-close:focus {
+      color: var(--color-secondary);
+      outline: none;
+    }
+
+    /* Cookie Consent Banner */
+    .cookie-banner {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      background: var(--color-accent);
+      color: var(--color-text);
+      padding: 20px;
+      box-shadow: 0 -2px 10px rgba(0,0,0,0.1);
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+      align-items: center;
+      z-index: 9997;
+      font-family: var(--font-primary);
+      opacity: 0;
+      transform: translateY(100%);
+      transition: opacity 0.5s ease, transform 0.5s ease;
+    }
+
+    .cookie-banner.show {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    [data-theme="light"] .cookie-banner {
+      background: var(--color-accent-modern);
+    }
+
+    .cookie-banner p {
+      flex: 1 1 100%;
+      max-width: 600px;
+      text-align: center;
+      margin-bottom: 10px;
+      font-size: 1rem;
+    }
+
+    .cookie-banner button {
+      background: var(--color-secondary);
+      color: var(--color-bg);
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      font-weight: 600;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background 0.3s ease, transform 0.2s ease;
+      font-family: var(--font-primary);
+    }
+
+    .cookie-banner button:hover,
+    .cookie-banner button:focus {
+      background: var(--color-primary-start);
+      transform: scale(1.05);
+      box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+      outline: none;
+    }
+
+    /* Responsive Footer */
+    @media (max-width: 768px) {
+      .footer-content {
+        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+        gap: 20px;
+      }
+
+      .footer-newsletter,
+      .footer-connect {
+        display: none;
+      }
+    }
+
+    /* Responsive Design */
+    @media (max-width: 1024px) {
+      /* No testimonials or carousel to adjust */
+    }
+
+    @media (max-width: 768px) {
+      nav {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        margin-top: 15px;
+        align-items: flex-start;
+      }
+
+      nav a, nav button.theme-toggle {
+        width: 100%;
+        text-align: left;
+        padding-left: 20px;
+        padding-right: 20px;
+      }
+
+      .menu-toggle {
+        display: flex;
+      }
+
+      /* When menu is open on mobile */
+      .navbar.open nav {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+      }
+
+      /* Keep navbar as row */
+      .navbar.open {
+        flex-direction: row;
+        align-items: center;
+      }
+
+      .navbar.open .navbar-logo {
+        margin-right: auto;
+      }
+
+      /* Put nav links below the 'IB Connect' text */
+      .navbar.open nav a,
+      .navbar.open nav button.theme-toggle {
+        padding-left: 20px;
+        padding-right: 20px;
+      }
+
+      .modal {
+        width: 95%;
+      }
+
+      .hero h1 {
+        font-size: 2.5rem;
+      }
+
+      .hero p {
+        font-size: 1.1rem;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .hero h1 {
+        font-size: 2rem;
+      }
+
+      .hero p {
+        font-size: 1rem;
+      }
+
+      .social-media a {
+        width: 35px;
+        height: 35px;
+      }
+
+      /* Remove border and box-shadow from buttons on phone */
+      .ib-score-button {
+        border: none;
+        box-shadow: none;
+      }
+
+      .ib-score-button:hover,
+      .ib-score-button:focus {
+        box-shadow: none;
+        transform: none;
+      }
+    }
+
+    /* Additional Animations */
+    @media (prefers-reduced-motion: no-preference) {
+      .fade-in {
+        transition: opacity 1s ease, transform 1s ease;
+      }
+
+      .fade-in.visible {
+        opacity: 1;
+        transform: translateY(0);
+      }
+
+      .hero h1 {
+        opacity: 0;
+        transform: translateX(-50px);
+      }
+
+      .hero.visible h1,
+      .hero.visible p {
+        opacity: 1;
+        transform: translateY(0);
+      }
+
+      /* Carousel Animation - Continuous Right-to-Left Scroll */
+      /* No carousel in the current code */
+    }
+  </style>
+</head>
+<body>
+
+  <a href="#main-content" class="skip-link">Skip to Main Content</a>
+
+  <header>
+    <div class="navbar" role="navigation" aria-label="Main Navigation">
+      <a class="navbar-logo" href="#hero" aria-label="Go to top of page">
+        <!-- Vintage SVG Logo -->
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="#8c6d5b" aria-hidden="true">
+          <circle cx="50" cy="50" r="48" stroke="#d4c2aa" stroke-width="4" fill="none"/>
+          <text x="50%" y="55%" text-anchor="middle" font-size="30" fill="#d4c2aa" font-family="Montserrat, sans-serif">IB</text>
+        </svg>
+        <span>IB Connect</span>
+      </a>
+      <button class="menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav>
+        <a href="#hero" aria-label="Home" data-aos="fade-down">Home</a>
+        <a href="#services" aria-label="Services" data-aos="fade-down" data-aos-delay="200">Services</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <!-- Primary Hero Section -->
+    <section class="hero fade-in" id="hero" aria-label="Welcome Section" data-aos="fade-up">
+      <h1>
+        <svg width="40" height="40" fill="#8c6d5b" aria-hidden="true" style="flex-shrink:0;">
+          <path d="M20 2a18 18 0 100 36 18 18 0 000-36zm0 32A14 14 0 1120 6a14 14 0 010 28z"/>
+          <path d="M15 9H13v4h4V11h-2V9z"/>
+        </svg>
+        Welcome to IB Connect
+      </h1>
+      <p>
+        Empowering IB students with comprehensive tutoring resources, expert support, and a vibrant community to excel in your International Baccalaureate journey.
+      </p>
+      <button aria-label="Learn More" class="open-modal-btn" data-aos="zoom-in" data-aos-delay="200">
+        <svg width="20" height="20" fill="#f5f0e1" aria-hidden="true">
+          <path d="M10 15V5M5 10l5-5 5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+        Learn More
+      </button>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-content">
+      <div class="footer-col">
+        <h3>About IB Connect</h3>
+        <p>IB Connect is dedicated to providing top-notch tutoring resources and support for International Baccalaureate students to ensure academic excellence and personal growth.</p>
+      </div>
+      <div class="footer-col">
+        <h3>Quick Links</h3>
+        <a href="#hero">Home</a>
+        <a href="#services">Services</a>
+      </div>
+      <div class="footer-col">
+        <h3>Contact</h3>
+        <p>Email: support@ibconnect.com</p>
+        <p>Phone: +1 (234) 567-8901</p>
+        <p>Address: 123 IB Connect Street, Education City, ED 45678</p>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="social-media" aria-label="Social Media Links">
+        <a href="https://www.facebook.com/ibconnect" target="_blank" rel="noopener" aria-label="Facebook">
+          <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <path d="M22.675 0h-21.35C.79 0 0 .77 0 1.326v21.348C0 23.4.79 24 1.77 24H12.82v-9.294H9.692v-3.622h3.128V8.413c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.464.099 2.797.143v3.24l-1.918.001c-1.504 0-1.796.715-1.796 1.764v2.313h3.587l-.467 3.622h-3.12V24h6.116C23.4 24 24 23.4 24 22.674V1.326C24 .77 23.4 0 22.675 0z"/>
+          </svg>
+        </a>
+        <a href="https://www.twitter.com/ibconnect" target="_blank" rel="noopener" aria-label="Twitter">
+          <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <path d="M24 4.557a9.83 9.83 0 01-2.828.775A4.932 4.932 0 0023.337 3.1a9.864 9.864 0 01-3.127 1.195A4.916 4.916 0 0016.616 3c-2.724 0-4.932 2.208-4.932 4.932 0 .386.044.762.127 1.124C7.691 8.094 4.066 6.13 1.64 3.161a4.822 4.822 0 00-.666 2.475c0 1.708.87 3.213 2.188 4.096A4.904 4.904 0 01.964 9.1v.062c0 2.385 1.693 4.374 3.946 4.827a4.902 4.902 0 01-2.224.084c.623 1.947 2.445 3.377 4.6 3.419A9.867 9.867 0 010 19.54a13.94 13.94 0 007.548 2.212c9.056 0 14.01-7.496 14.01-13.986 0-.213-.005-.425-.014-.636A10.012 10.012 0 0024 4.557z"/>
+          </svg>
+        </a>
+        <a href="https://www.linkedin.com/company/ibconnect" target="_blank" rel="noopener" aria-label="LinkedIn">
+          <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <path d="M22.23 0H1.77C.79 0 0 .77 0 1.72v20.56C0 23.23.79 24 1.77 24h20.46C23.21 24 24 23.23 24 22.28V1.72C24 .77 23.21 0 22.23 0zM7.06 20.45H3.56V9h3.5v11.45zM5.31 7.69a2.03 2.03 0 110-4.06 2.03 2.03 0 010 4.06zM20.45 20.45h-3.5v-5.56c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.13 1.44-2.13 2.94v5.66h-3.5V9h3.36v1.56h.05c.47-.89 1.62-1.83 3.34-1.83 3.57 0 4.23 2.35 4.23 5.4v6.31z"/>
+          </svg>
+        </a>
+        <a href="https://www.instagram.com/ibconnect" target="_blank" rel="noopener" aria-label="Instagram">
+          <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <path d="M12 2.163c3.204 0 3.584.012 4.85.07 1.17.056 1.97.24 2.427.415a4.92 4.92 0 011.675 1.09 4.92 4.92 0 011.09 1.675c.175.457.359 1.257.415 2.427.058 1.266.07 1.646.07 4.85s-.012 3.584-.07 4.85c-.056 1.17-.24 1.97-.415 2.427a4.92 4.92 0 01-1.09 1.675 4.92 4.92 0 01-1.675 1.09c-.457.175-1.257.359-2.427.415-1.266.058-1.646.07-4.85.07s-3.584-.012-4.85-.07c-1.17-.056-1.97-.24-2.427-.415a4.92 4.92 0 01-1.675-1.09 4.92 4.92 0 01-1.09-1.675c-.175-.457-.359-1.257-.415-2.427C2.175 15.747 2.163 15.367 2.163 12s.012-3.584.07-4.85c.056-1.17.24-1.97.415-2.427a4.92 4.92 0 011.09-1.675A4.92 4.92 0 014.59 3.09c.457-.175 1.257-.359 2.427-.415C8.416 2.175 8.796 2.163 12 2.163zm0-2.163C8.741 0 8.332.013 7.052.07 5.775.127 4.865.342 4.115.692a6.92 6.92 0 00-2.5 1.635A6.92 6.92 0 00.692 4.115c-.35.75-.565 1.66-.622 2.937C.013 8.332 0 8.741 0 12c0 3.259.013 3.668.07 4.948.057 1.277.272 2.187.622 2.937a6.92 6.92 0 001.635 2.5 6.92 6.92 0 002.5 1.635c.75.35 1.66.565 2.937.622C8.332 23.987 8.741 24 12 24s3.668-.013 4.948-.07c1.277-.057 2.187-.272 2.937-.622a6.92 6.92 0 002.5-1.635 6.92 6.92 0 001.635-2.5c.35-.75.565-1.66.622-2.937.057-1.28.07-1.689.07-4.948s-.013-3.668-.07-4.948c-.057-1.277-.272-2.187-.622-2.937a6.92 6.92 0 00-1.635-2.5A6.92 6.92 0 0019.885.692c-.75-.35-1.66-.565-2.937-.622C15.668.013 15.259 0 12 0z"/>
+            <path d="M12 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zm0 10.162a4 4 0 110-8 4 4 0 010 8z"/>
+            <circle cx="18.406" cy="5.594" r="1.44"/>
+          </svg>
+        </a>
+      </div>
+      <p>&copy; 2024 IB Connect. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Floating Buttons -->
+  <div class="floating-buttons">
+    <button class="floating-theme-toggle" aria-label="Toggle dark mode">
+      <svg class="theme-icon sun" viewBox="0 0 24 24" aria-hidden="true">
+        <path d="M12 4V2m6.363 3.637l1.414-1.414M20 12h2m-3.637 6.363l1.414 1.414M12 22v2m-6.363-3.637l-1.414 1.414M4 12H2m3.637-6.363l-1.414-1.414" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+        <circle cx="12" cy="12" r="4" fill="currentColor"/>
+      </svg>
+      <svg class="theme-icon moon" viewBox="0 0 24 24" aria-hidden="true">
+        <path d="M21 12.79A9 9 0 1111.21 3a7 7 0 109.79 9.79z" fill="currentColor"/>
+      </svg>
+    </button>
+    <button class="back-to-top" aria-label="Back to top" data-aos="fade-up" data-aos-delay="100">
+      <svg width="20" height="20" fill="#f5f0e1" aria-hidden="true">
+        <path d="M10 15V5M5 10l5-5 5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+      </svg>
+    </button>
+  </div>
+
+  <!-- Modal for Sign-Up -->
+  <div class="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="signup-title" id="signup-modal-overlay">
+    <div class="modal" id="signup-modal" data-aos="zoom-in">
+      <button class="modal-close" aria-label="Close sign-up form">&times;</button>
+      <h3 id="signup-title">Join IB Connect</h3>
+      <form id="signup-form" novalidate>
+        <div class="error-message" id="signup-error-msg">Please fill out all fields correctly.</div>
+        <label for="signup-name">Name</label>
+        <input type="text" id="signup-name" name="name" aria-required="true" required placeholder="Your full name"/>
+        <label for="signup-email">Email</label>
+        <input type="email" id="signup-email" name="email" aria-required="true" required placeholder="you@example.com"/>
+        <button type="submit">Sign Up</button>
+      </form>
+      <div class="thank-you" aria-live="polite">
+        <p>Thank you for signing up! We’ll be in touch soon.</p>
+        <button class="close-thank-you">Close</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal for Event Registration (Future Use) -->
+  <div class="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="event-modal-title" id="event-modal-overlay">
+    <div class="modal" data-aos="zoom-in">
+      <button class="modal-close" aria-label="Close event registration form">&times;</button>
+      <h3 id="event-modal-title">Register for Event</h3>
+      <form id="event-registration-form" novalidate>
+        <div class="error-message" id="event-error-msg">Please fill out all fields correctly.</div>
+        <label for="event-name">Name</label>
+        <input type="text" id="event-name" name="name" aria-required="true" required placeholder="Your full name"/>
+        <label for="event-email">Email</label>
+        <input type="email" id="event-email" name="email" aria-required="true" required placeholder="you@example.com"/>
+        <label for="event-phone">Phone Number</label>
+        <input type="tel" id="event-phone" name="phone" aria-required="false" placeholder="Optional"/>
+        <button type="submit">Register</button>
+      </form>
+      <div class="thank-you" aria-live="polite">
+        <p>Thank you for registering! We’ll send you more details soon.</p>
+        <button class="close-thank-you">Close</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Cookie Consent Banner -->
+  <div class="cookie-banner" aria-label="Cookie Consent Banner">
+    <p>We use cookies to enhance your experience. By continuing, you agree to our cookie policy.</p>
+    <button class="cookie-accept">Accept</button>
+    <button class="cookie-decline">Decline</button>
+  </div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      // Initialize AOS
+      AOS.init({
+        duration: 1000,
+        once: true,
+        disable: 'mobile', // Disable AOS on mobile devices if desired
+      });
+
+      // Fade-in on scroll using IntersectionObserver
+      const fadeInElements = document.querySelectorAll('.fade-in');
+      const observerOptions = { threshold: 0.2 };
+      const fadeInObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if(entry.isIntersecting){
+            entry.target.classList.add('visible');
+            fadeInObserver.unobserve(entry.target);
+          }
+        });
+      }, observerOptions);
+      fadeInElements.forEach(el => fadeInObserver.observe(el));
+
+      // Mobile menu toggle
+      const menuToggle = document.querySelector('.menu-toggle');
+      const navbar = document.querySelector('.navbar');
+      const nav = document.querySelector('nav');
+      const navLinks = document.querySelectorAll('nav a');
+
+      menuToggle.addEventListener('click', () => {
+        const expanded = menuToggle.getAttribute('aria-expanded') === 'true' || false;
+        menuToggle.setAttribute('aria-expanded', !expanded);
+        menuToggle.classList.toggle('open');
+        navbar.classList.toggle('open');
+      });
+
+      // Close mobile menu when a link or button is clicked
+      navLinks.forEach(link => {
+        link.addEventListener('click', () => {
+          if (window.innerWidth <= 768) {
+            menuToggle.setAttribute('aria-expanded', false);
+            menuToggle.classList.remove('open');
+            navbar.classList.remove('open');
+          }
+        });
+      });
+
+      // Theme toggle with localStorage
+      const htmlElement = document.documentElement;
+      const savedTheme = localStorage.getItem('ibTheme');
+      if (savedTheme) {
+        htmlElement.setAttribute('data-theme', savedTheme);
+      }
+
+      const floatingThemeToggleBtn = document.querySelector('.floating-theme-toggle');
+      if (floatingThemeToggleBtn) {
+        floatingThemeToggleBtn.addEventListener('click', () => {
+          const currentTheme = htmlElement.getAttribute('data-theme');
+          const newTheme = currentTheme === 'light' ? 'dark' : 'light';
+          htmlElement.setAttribute('data-theme', newTheme);
+          localStorage.setItem('ibTheme', newTheme);
+        });
+      }
+
+      // Back to Top Button
+      const backToTopButton = document.querySelector('.back-to-top');
+
+      window.addEventListener('scroll', () => {
+        if (window.scrollY > 100) { // Reduced threshold for quicker hide
+          backToTopButton.classList.add('visible');
+        } else {
+          backToTopButton.classList.remove('visible');
+        }
+      });
+
+      backToTopButton.addEventListener('click', () => {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      });
+
+      // Modal & Form Functionality
+      const openModalBtns = document.querySelectorAll('.open-modal-btn');
+      const modalOverlays = document.querySelectorAll('.modal-overlay');
+      const modalCloseBtns = document.querySelectorAll('.modal-close');
+      const closeThankYouBtns = document.querySelectorAll('.close-thank-you');
+
+      const signupForm = document.getElementById('signup-form');
+      const signupErrorMsg = document.getElementById('signup-error-msg');
+      const signupThankYou = modalOverlays[0].querySelector('.thank-you');
+
+      const eventRegistrationForm = document.getElementById('event-registration-form');
+      const eventErrorMsg = document.getElementById('event-error-msg');
+      const eventThankYou = modalOverlays[1].querySelector('.thank-you');
+
+      // Function to open modal
+      function openModal(overlay) {
+        overlay.classList.add('active');
+        const modal = overlay.querySelector('.modal');
+        modal.style.animation = 'modalIn 0.5s forwards';
+        // Focus the first input
+        const firstInput = modal.querySelector('input, textarea, button');
+        if (firstInput) firstInput.focus();
+      }
+
+      // Function to close modal
+      function closeModal(overlay) {
+        overlay.classList.remove('active');
+      }
+
+      // Open Modals
+      openModalBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+          const targetSection = btn.closest('section').id;
+          let targetModal;
+          if (targetSection === 'cta') {
+            targetModal = modalOverlays[0];
+            signupForm.style.display = 'block';
+            signupThankYou.style.display = 'none';
+            signupErrorMsg.style.display = 'none';
+          } else if (targetSection === 'additional-hero') {
+            targetModal = modalOverlays[1];
+            eventRegistrationForm.style.display = 'block';
+            eventThankYou.style.display = 'none';
+            eventErrorMsg.style.display = 'none';
+          }
+          if (targetModal) {
+            openModal(targetModal);
+          }
+        });
+      });
+
+      // Close Modals
+      modalCloseBtns.forEach((btn) => {
+        btn.addEventListener('click', () => {
+          const overlay = btn.closest('.modal-overlay');
+          closeModal(overlay);
+        });
+      });
+
+      closeThankYouBtns.forEach((btn) => {
+        btn.addEventListener('click', () => {
+          const overlay = btn.closest('.modal-overlay');
+          closeModal(overlay);
+        });
+      });
+
+      // Close Modals when clicking outside
+      window.addEventListener('click', (e) => {
+        modalOverlays.forEach((overlay) => {
+          if (e.target === overlay) {
+            closeModal(overlay);
+          }
+        });
+      });
+
+      // Form Submission Handling
+      signupForm.addEventListener('submit', (e) => {
+        e.preventDefault();
+        const name = document.getElementById('signup-name').value.trim();
+        const email = document.getElementById('signup-email').value.trim();
+        if (!name || !email || !validateEmail(email)) {
+          signupErrorMsg.style.display = 'block';
+        } else {
+          signupForm.style.display = 'none';
+          signupThankYou.style.display = 'block';
+        }
+      });
+
+      eventRegistrationForm.addEventListener('submit', (e) => {
+        e.preventDefault();
+        const name = document.getElementById('event-name').value.trim();
+        const email = document.getElementById('event-email').value.trim();
+        if (!name || !email || !validateEmail(email)) {
+          eventErrorMsg.style.display = 'block';
+        } else {
+          eventRegistrationForm.style.display = 'none';
+          eventThankYou.style.display = 'block';
+        }
+      });
+
+      // Validate Email Function
+      function validateEmail(email) {
+        const re = /^(([^<>()\[\]\\.,;:\s@"]+(.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@(([^<>()[\]\\.,;:\s@"]+.)+[^<>()[\]\\.,;:\s@"]{2,})$/i;
+        return re.test(String(email).toLowerCase());
+      }
+
+      // Hide/Show Navbar on Scroll with Throttle
+      let lastScrollPos = 0;
+      const navbarEl = document.querySelector('.navbar');
+      let ticking = false;
+
+      window.addEventListener('scroll', () => {
+        lastScrollPos = window.scrollY;
+        if (!ticking) {
+          window.requestAnimationFrame(() => {
+            if (lastScrollPos > 100) { // Adjusted threshold
+              navbarEl.classList.add('hidden');
+            } else {
+              navbarEl.classList.remove('hidden');
+            }
+            ticking = false;
+          });
+          ticking = true;
+        }
+      });
+
+      // Scroll Spy for Navigation
+      const sections = document.querySelectorAll('main section[id]');
+      const navLinkElements = document.querySelectorAll('nav a[href^="#"]');
+
+      const scrollSpyOptions = { threshold: 0.5 };
+      const scrollSpyObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            const id = entry.target.getAttribute('id');
+            navLinkElements.forEach(link => {
+              link.classList.remove('active');
+              if (link.getAttribute('href') === '#' + id) {
+                link.classList.add('active');
+              }
+            });
+          }
+        });
+      }, scrollSpyOptions);
+
+      sections.forEach(section => {
+        scrollSpyObserver.observe(section);
+      });
+
+      // Cookie Consent Banner
+      const cookieBanner = document.querySelector('.cookie-banner');
+      const cookieAcceptBtn = cookieBanner.querySelector('.cookie-accept');
+      const cookieDeclineBtn = cookieBanner.querySelector('.cookie-decline');
+
+      const cookieChoice = localStorage.getItem('cookieConsent');
+      if (!cookieChoice) {
+        setTimeout(() => {
+          cookieBanner.classList.add('show');
+        }, 1000); // Show after 1 second
+      }
+
+      cookieAcceptBtn.addEventListener('click', () => {
+        localStorage.setItem('cookieConsent', 'accepted');
+        cookieBanner.classList.remove('show');
+      });
+
+      cookieDeclineBtn.addEventListener('click', () => {
+        localStorage.setItem('cookieConsent', 'declined');
+        cookieBanner.classList.remove('show');
+      });
+
+      // Accessibility: Trap focus within modals when open
+      modalOverlays.forEach((overlay) => {
+        overlay.addEventListener('keydown', (e) => {
+          if (e.key === 'Tab') {
+            const focusableElements = overlay.querySelectorAll('a[href], button:not([disabled]), textarea, input, select');
+            const firstElement = focusableElements[0];
+            const lastElement = focusableElements[focusableElements.length - 1];
+
+            if (e.shiftKey) { // Shift + Tab
+              if (document.activeElement === firstElement) {
+                e.preventDefault();
+                lastElement.focus();
+              }
+            } else { // Tab
+              if (document.activeElement === lastElement) {
+                e.preventDefault();
+                firstElement.focus();
+              }
+            }
+          }
+        });
+      });
+
+      // Handle Reduced Motion Preference
+      const mediaQuery = window.matchMedia('(prefers-reduced-motion: reduce)');
+      if (mediaQuery.matches) {
+        AOS.init({
+          disable: true,
+        });
+        document.querySelectorAll('.fade-in').forEach(el => {
+          el.style.opacity = 1;
+          el.style.transform = 'none';
+        });
+        // Disable carousel by removing animation
+        const testimonialCarousel = document.querySelector('.testimonial-carousel');
+        if (testimonialCarousel) {
+          testimonialCarousel.style.animation = 'none';
+        }
+      }
+    });
+  </script>
+</body>
+</html>
